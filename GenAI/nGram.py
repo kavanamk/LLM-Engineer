@@ -54,3 +54,18 @@ for word in unique_words:
     row_values = [f"{bigram_matrix[word][w]:.1f}" for w in unique_words]
     print(f"{word:<{col_width}}", end=" | ")
     print(" | ".join(f"{val:<{col_width}}" for val in row_values))
+
+
+
+Bigram Probability Matrix:
+
+Word     | amazing  | are      | i        | language | love     | models   | natural  | processing
+---------------------------------------------------------------------------
+amazing  | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0     
+are      | 1.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0     
+i        | 0.0      | 0.0      | 0.0      | 0.0      | 1.0      | 0.0      | 0.0      | 0.0     
+language | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.5      | 0.0      | 0.5     
+love     | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 1.0      | 0.0     
+models   | 0.0      | 1.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0     
+natural  | 0.0      | 0.0      | 0.0      | 1.0      | 0.0      | 0.0      | 0.0      | 0.0     
+processing | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0      | 0.0
